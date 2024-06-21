@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica de Nutrición y Fitness</title>
+    <link rel="stylesheet" href="nutri.css">
+    <script src="nutri.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#consejos">Consejos Fitness</a></li>
+                <li><a href="#calculadora">Calculadora de IMC</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Bienvenido a la Nutrición Correcta</h1>
+            <p>Tu salud, nuestra prioridad.</p>
+        </div>
+    </header>
+
+    <div id="inf" class="content-section">
+        <p>Una nutrición saludable es fundamental para la prevención de factores de riesgo relacionados con la dieta, como el sobrepeso y la obesidad, y las enfermedades no transmisibles asociadas.
+            El consumo de alimentos y bebidas con alto contenido de nutrientes críticos (sal / sodio, azúcar, grasas saturadas y grasas trans) se ha asociado con un mayor riesgo de factores de riesgo relacionados con la dieta y enfermedades no transmisibles asociadas, así como emaciación, retraso de crecimiento y enfermedades por deficiencia.
+            La evidencia también ha demostrado la importancia de la práctica adecuada de la lactancia materna y la alimentación complementaria y los sistemas alimentarios saludables sostenibles.
+            Mediante políticas, legislación y estrategias sobre nutrición saludable, se puede prevenir la malnutrición en todas sus formas.</p>
+    </div>
+
+    <section id="servicios" class="content-section">
+        <h2>Servicios que debes consultar</h2>
+        <div class="services-grid">
+            <div class="service-item">
+                <img src="C:/Users/coffe/OneDrive/Imágenes/Nutri.png" alt="Consultas de Nutrición">
+                <a href="https://nutricion.org/consulta-nutricion-sedca/"><h3>Consultas de Nutrición</h3></a>
+            </div>
+            <div class="service-item">
+                <img src="https://www.centrodeportivoacropolis.com/wp-content/uploads/2015/11/Asesoramiento-nutricional2.jpg" alt="Planes de Entrenamiento">
+                <a href="https://www.myprotein.es/thezone/entrenamiento/plan-entrenamiento-nutricion/"><h3>Planes de Entrenamiento</h3></a>
+            </div>
+            <div class="service-item">
+                <img src="https://oceanomedicina.com/wp-content/uploads/2022/01/Cursos-de-nutricion.jpg" alt="Talleres y Seminarios">
+                <a href="https://www.eventbrite.com/cc/seminarios-talleres-de-nutricion-y-wellness-1052959"><h3>Talleres y Seminarios</h3></a>
+            </div>
+            <div class="service-item">
+                <img src="https://www.centrodeportivoacropolis.com/wp-content/uploads/2015/11/Asesoramiento-nutricional2.jpg" alt="Asesoría Online">
+                <a href="https://www.cigna.com/es-us/knowledge-center/hw/asesoramiento-nutricional-stn166043#:~:text=Asesoramiento%20nutricional%20significa%20que%20un,La%20estatura%20y%20el%20peso."><h3>Asesoría Online</h3></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="consejos" class="content-section">
+        <h2>Consejos de Vida Fitness</h2>
+        <div class="tips-grid">
+            <article>
+                <img src="https://cdn-icons-png.flaticon.com/512/2906/2906515.png" alt="Dieta Equilibrada">
+                <h3>Consejo 1: Mantén una Dieta Equilibrada</h3>
+                <p>Una dieta balanceada es clave para obtener los nutrientes necesarios y mantener un peso saludable.</p>
+            </article>
+            <article>
+                <img src="https://camde.es/wp-content/uploads/2018/12/HealthLifter_Apple-271x300.jpg" alt="Ejercicio Regular">
+                <h3>Consejo 2: Ejercicio Regular</h3>
+                <p>Realizar ejercicio de manera regular mejora tu salud cardiovascular y fortalece tus músculos.</p>
+            </article>
+            <article>
+                <img src="https://st4.depositphotos.com/18759550/24039/v/450/depositphotos_240390840-stock-illustration-drinking-water-linecolor-illustration.jpg" alt="Hidratación">
+                <h3>Consejo 3: Hidratación</h3>
+                <p>Beber suficiente agua es esencial para mantener tu cuerpo funcionando correctamente.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="calculadora" class="content-section">
+        <h2>Calculadora de IMC</h2>
+        <form onsubmit="calcularIMC(event)">
+            <label for="peso">Peso (kg):</label>
+            <input type="number" id="peso" name="peso" required>
+            <label for="altura">Altura (cm):</label>
+            <input type="number" id="altura" name="altura" required>
+            <button type="submit">Calcular IMC</button>
+        </form>
+        <p id="resultadoIMC"></p>
+    </section>
+
+    <footer>
+        <p>&copy; Mariana Arteaga, Lizeth Juarez, Perez Gomez</p>
+    </footer>
+</body>
+</html>
